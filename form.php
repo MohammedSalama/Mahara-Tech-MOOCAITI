@@ -7,10 +7,13 @@
     <title><?= "HTML-FORM"; ?></title>
 </head>
 <body>
-    <form action="" method="POST" >
+    <form action="proccess.php" method="POST" >
         <!-- Name  -->
         <label for="name">Name</label>
         <input type="text" name="name" id="name">
+        <!-- E-mail  -->
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
         <!-- Distance  -->
         <br>
         <!-- Password  -->
