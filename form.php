@@ -1,3 +1,14 @@
+<?php
+
+// Check for errors 
+$errors_arr = array();
+if (isset($_GET['error_fields']))
+{
+    $errors_arr = explode(",", $_GET['error_fields']);
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +18,7 @@
     <title><?= "HTML-FORM"; ?></title>
 </head>
 <body>
-    <form action="proccess.php" method="POST" >
+    <form action="proccess_db.php" method="POST" >
         <!-- Name  -->
         <label for="name">Name</label>
         <input type="text" name="name" id="name">
